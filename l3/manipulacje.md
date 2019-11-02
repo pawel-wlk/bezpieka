@@ -22,6 +22,7 @@ Sytuacja jest zgoła odmienna gdy zamierzamy poprzeć partię na granicy progu w
 Jak pokazuje załączony skrypt, tego typu ugrupowania potrzebują często jedynie kilkuset głosów aby zaszczycić parlament swoją prezencją.
 
 Brakujące głosy do otrzymania 1 mandatu, 2019:
+
 okręg wyborczy | partia	| liczba głosów
 -|-|-
 18	Siedlce	  |KON | 682
@@ -33,6 +34,7 @@ okręg wyborczy | partia	| liczba głosów
 
 
 Brakujące głosy do otrzymania 1 mandatu, 2015:
+
 okręg wyborczy | partia	| liczba głosów
 -|-|-
 23 Rzeszów       |PSL |54
