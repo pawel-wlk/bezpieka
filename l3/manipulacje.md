@@ -9,18 +9,30 @@ Będziemy rozważać dwie taktyki, mogące doprowadzić do osiągnięcia powyżs
 ## Całkowita kontrola nad jednym z lokali wyborczych
 
 W tym wypadku, mamy nieograniczoną kontrolę nad wynikiem wysłanym z lokalu do PKW.
-Z danych PKW o wyborach samorzadowych w 2019 r. na jeden obwód przypada około 1096 uprawnionych do głosowania.
+Z danych PKW o wyborach do sejmu w 2019 r. na jeden obwód przypada około 1096 uprawnionych do głosowania.
 Rola przejętych glosów jest zatem zalezna od przyjętego celu.
 
 ### Poparcie wybranej partii
 
 Jeżeli przejęte głosy zostaną przeznaczone na jedną z dużych partii, mają one marginalny wpływ. 
 W okręgu wrocławskim dwa prowadzące ugrupowania zdobyły ponad 200 000 głosów, trzeci z kolei komitet miał na swoim koncie ponad stutysięczne poparcie.
-Dla zwolennika któregokolwiek z tych ugrupowań fałszowanie wyborów w ten sposób jest nieobłacalne.
+Dla zwolennika któregokolwiek z tych ugrupowań fałszowanie wyborów w ten sposób jest nieopłacalne.
+![](wyniki.png)
 Sytuacja jest zgoła odmienna gdy zamierzamy poprzeć partię na granicy progu wyborczego.
 Jak pokazuje załączony skrypt, tego typu ugrupowania potrzebują często jedynie kilkuset głosów aby zaszczycić parlament swoją prezencją.
 
+okręg wyborczy | partia	| liczba głosów
+-|-|-
+18	Siedlce	  |KON | 682
+4	 Bydgoszcz	|KON | 1104
+20	Warszawa	|KON  |1129
+12	Kraków	  |LEW  |1276
+19	Warszawa	|LEW  |1820
+35	Olsztyn	  |KON | 2618
+
+
 Skuteczność tej taktyki w dużej mierze zależy od partii, którą popiera antagonista.
+
 
 ### Zmniejszenie wyniku partii prowadzącej w sondażach
 
@@ -38,6 +50,8 @@ Zakładając jednak, że unieważnienie części głosów jest możliwe, rozważ
 
 Załóżmy, że każdy antydemokrata może unieważnić 5 głosów.
 Bazując na danych z 2019 roku, organizacja dokonująca tego typu ataku jest w stanie unieważnić około 3000 głosów w przeciętnej wielkości okręgu wyborczym.
+
+![Okręgi wyborcze w powiecie wrocławskim](okregi.png)
 
 Jest to nieporównywalnie większy wpływ niż w przypadku przejęcia całego lokalu wyborczego jednak wciąż są to liczby marginalne względem liczby głosów oddanych na wygrywające partie.
 
