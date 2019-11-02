@@ -9,7 +9,7 @@ Będziemy rozważać dwie taktyki, mogące doprowadzić do osiągnięcia powyżs
 ## Całkowita kontrola nad jednym z lokali wyborczych
 
 W tym wypadku, mamy nieograniczoną kontrolę nad wynikiem wysłanym z lokalu do PKW.
-Z danych PKW o wyborach do sejmu w 2019 r. na jeden obwód przypada około 1096 uprawnionych do głosowania.
+Z danych PKW o wyborach do sejmu w 2019 i 2015 r. na jeden obwód przypada około 1096 uprawnionych do głosowania.
 Rola przejętych glosów jest zatem zalezna od przyjętego celu.
 
 ### Poparcie wybranej partii
@@ -21,6 +21,7 @@ Dla zwolennika któregokolwiek z tych ugrupowań fałszowanie wyborów w ten spo
 Sytuacja jest zgoła odmienna gdy zamierzamy poprzeć partię na granicy progu wyborczego.
 Jak pokazuje załączony skrypt, tego typu ugrupowania potrzebują często jedynie kilkuset głosów aby zaszczycić parlament swoją prezencją.
 
+Brakujące głosy do otrzymania 1 mandatu, 2019:
 okręg wyborczy | partia	| liczba głosów
 -|-|-
 18	Siedlce	  |KON | 682
@@ -29,6 +30,18 @@ okręg wyborczy | partia	| liczba głosów
 12	Kraków	  |LEW  |1276
 19	Warszawa	|LEW  |1820
 35	Olsztyn	  |KON | 2618
+
+
+Brakujące głosy do otrzymania 1 mandatu, 2015:
+okręg wyborczy | partia	| liczba głosów
+-|-|-
+23 Rzeszów       |PSL |54
+6 Lublin         |KUK |955
+11 Sieradz       |PET |1408
+4 Bydgoszcz	     |PO  |2077
+7 Chełm          |PSL |2092
+27 Bielsko Biała |PO  |2292
+ 
 
 
 Skuteczność tej taktyki w dużej mierze zależy od partii, którą popiera antagonista.
