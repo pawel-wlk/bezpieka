@@ -131,7 +131,7 @@ Strategia ta jest szczególnie skuteczna dla dużych ugrupowań i jest swojego r
 W tym celu taktyka wydaje się dość oczywista, wystarczy jedynie świadomie unieważniać głosy przeznaczone na komitet, którego wynik chcemy pogorszyć.
 
 Skuteczność obu powyższych metod jest jednak mocno zalezna od zdolności napastników do niepostrzeżonego unieważniania kart.
-Możliwości te, niestety są niemożliwe do oszacowania.
+Możliwości te niestety są niemożliwe do oszacowania.
 
 
 ## Przeciwdziałanie
