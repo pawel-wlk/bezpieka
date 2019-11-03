@@ -17,7 +17,7 @@ for district in data:
   mandates = int(district["Mandaty"])
 
   divisor = 1
-  while len(l) < 2*mandates:
+  while len(l) < mandates * len(PARTIES):
     for party in PARTIES:
       l += [(party, district[party] / divisor)]
     divisor += 1
@@ -33,7 +33,7 @@ for district in data:
     else:
       print(" | ", 0, end="")
 
-  print("\n")
+  print("")
 
 
 
