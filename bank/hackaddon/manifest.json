@@ -1,0 +1,14 @@
+{
+
+  "manifest_version": 2,
+  "name": "Hackbank",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://localhost/*"],
+      "js": ["hack.js"]
+    }
+  ]
+
+}
