@@ -1,0 +1,26 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<h1>
+  Bezpieczeństwo masz jak w banku!
+</h1>
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" id="login" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="password" placeholder="Hasło">
+  </div>
+  <button type="submit" class="btn btn-primary">Zaloguj się</button>
+</form>
+<nav>
+  <ul>
+    <li>
+      <a href="/forgot_password">Zapomniałem hasła</a>
+    </li>
+    <li>
+      Nie masz konta? <a href="/register">Zarejestruj się</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}
