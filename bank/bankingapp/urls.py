@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from django.contrib.auth import views as auth_views
 
@@ -11,6 +11,5 @@ urlpatterns = [
   path('new_transaction', views.new_transaction, name='new_transaction'),
   path('login', auth_views.LoginView.as_view(), name='login'),
   path('logout', auth_views.LogoutView.as_view(), name='logout'),
-  path('forgot_password', views.forgot_password, name='forgot_password'),
   path('register', views.register, name='register'),
 ]
