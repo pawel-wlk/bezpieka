@@ -1,25 +1,20 @@
 {% extends 'header.html' %}
 
 {% block content %}
+{% csrf_token %}
 <h1>
-  Bezpieczeństwo masz jak w banku!
+  Welcome in our banking app.
 </h1>
-<form>
-  <div class="form-group">
-    <input type="text" class="form-control" id="login" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <input type="password" class="form-control" id="password" placeholder="Hasło">
-  </div>
-  <button type="submit" class="btn btn-primary">Zaloguj się</button>
-</form>
 <nav>
   <ul>
     <li>
-      <a href="/forgot_password">Zapomniałem hasła</a>
+      <a href="/login">Log in</a>
     </li>
     <li>
-      Nie masz konta? <a href="/register">Zarejestruj się</a>
+      <a href="/forgot_password">Forgot password</a>
+    </li>
+    <li>
+      No account? <a href="/register">register</a>
     </li>
   </ul>
 </nav>
