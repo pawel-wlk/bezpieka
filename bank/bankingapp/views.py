@@ -55,10 +55,6 @@ def confirm_transaction(request):
     return redirect('dashboard')
 
 
-def forgot_password(request):
-    return render(request, "forgot_password.html")
-
-
 def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
@@ -71,4 +67,4 @@ def register(request):
             return redirect('dashboard')
     else:
         form = RegisterForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'registration/register.html', {'form': form})

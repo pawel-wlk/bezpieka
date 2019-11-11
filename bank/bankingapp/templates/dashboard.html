@@ -4,7 +4,7 @@
 <h5>
   {% csrf_token %}
   You are logged in as {{ request.user.username }}.
-  <a href="/logout">Logout</a>
+  <a href="accounts/logout">Logout</a>
 </h5>
 <h6>Account status: {{request.user.account.balance}}</h6>
 <a href="/new_transaction" class="btn btn-primary">Make a new transaction</a>
