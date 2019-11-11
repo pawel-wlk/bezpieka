@@ -1,8 +1,5 @@
 {% extends 'header.html' %}
 {% block content %}
-<h1>
-  Welcome in our banking app.
-</h1>
 <form method="post">
     {% csrf_token %}
     {% for field in form %}

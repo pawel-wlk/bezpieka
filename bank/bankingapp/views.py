@@ -31,6 +31,8 @@ def new_transaction(request):
     if request.method == 'POST':
         form = TransactionForm(request.POST)
         if form.is_valid():
+            if len(User.objects.filter(username=form.cleaned_data['recipient'])) != 1:
+                return render(request, "error.html", {'error': 'Wrong recipient.'})
             return render(request, 'confirmation.html', {'transaction': form.cleaned_data})
     else:
         form = TransactionForm()
@@ -43,18 +45,11 @@ def confirm_transaction(request):
         # perform transaction
         recipient = request.POST['recipient']
         amount = int(request.POST['amount'])
-
-        print(recipient)
-        print(amount)
-        to_user = User.objects.filter(username=recipient)
-        print(to_user)
-
-        if len(to_user) != 1:
-            print("wrong recipient")
+        to_user = User.objects.filter(username=recipient)[0]
 
         Transaction.objects.create(
             from_account=request.user.account,
-            to_account=to_user[0].account,
+            to_account=to_user.account,
             amount=amount
         )
     return redirect('dashboard')

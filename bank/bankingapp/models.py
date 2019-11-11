@@ -24,7 +24,7 @@ class Transaction(models.Model):
     from_account = models.ForeignKey(Account, on_delete=models.DO_NOTHING, related_name="from_account")
     to_account = models.ForeignKey(Account, on_delete=models.DO_NOTHING, related_name="to_account")
     amount = models.PositiveIntegerField()
-    date = models.DateField(default=datetime.date.today)
+    date = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
         self.from_account.balance -= self.amount
