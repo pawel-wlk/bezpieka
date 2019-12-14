@@ -24,9 +24,8 @@ SECRET_KEY = '34vcenq(vwv&c)i06rkcb(jg5t29wr)dzn_c89wh@we83dh(4z'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = os.environ['DEBUG'] == "1" 
+ALLOWED_HOSTS = (os.environ.get("DJANGO_ALLOWED_HOSTS") or "").split(" ")
 
 
 # Application definition
