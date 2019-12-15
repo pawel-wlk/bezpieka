@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: gunicorn/20.0.4
+Date: Sat, 14 Dec 2019 15:10:08 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Content-Length: 1331
+Set-Cookie: csrftoken=Pj84sPbRWnIIGFgoLlygjuBMxS3v3772OjbOl999odLXfpJugsT5jZqrBVXvypCL; expires=Sat, 12 Dec 2020 15:10:08 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+[...truncated...]

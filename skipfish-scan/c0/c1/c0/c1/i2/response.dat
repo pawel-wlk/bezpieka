@@ -1,0 +1,11 @@
+HTTP/1.1 302 Found
+Server: gunicorn/20.0.4
+Date: Sat, 14 Dec 2019 15:53:12 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Location: /admin/login/?next=/admin/auth/user/sfi9876/
+Expires: Sat, 14 Dec 2019 15:53:12 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Content-Length: 0
+Vary: Cookie

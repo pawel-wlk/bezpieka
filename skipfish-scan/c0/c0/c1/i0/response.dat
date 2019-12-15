@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: gunicorn/20.0.4
+Date: Sat, 14 Dec 2019 18:58:16 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1458
+Set-Cookie: csrftoken=Pj84sPbRWnIIGFgoLlygjuBMxS3v3772OjbOl999odLXfpJugsT5jZqrBVXvypCL; expires=Sat, 12 Dec 2020 18:58:16 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"

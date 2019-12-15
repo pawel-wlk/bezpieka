@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 302 Found\x0aServer: gunicorn/20.0.4\x0aDate: Sun, 15 Dec 2019 11:28:14 GMT\x0aConnection: close\x0aContent-Type: text/html; charset=utf-8\x0aLocation: /accounts/password_reset/done/\x0aX-Frame-Options: SAMEORIGIN\x0aContent-Length: 0\x0a\x0a'}
