@@ -25,6 +25,8 @@ class Transaction(models.Model):
     to_account = models.ForeignKey(Account, on_delete=models.DO_NOTHING, related_name="to_account")
     amount = models.PositiveIntegerField()
     date = models.DateTimeField(auto_now_add=True)
+    message = models.TextField(default="")
+    accepted = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         self.from_account.balance -= self.amount

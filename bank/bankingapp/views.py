@@ -13,6 +13,25 @@ def index(request):
     return render(request, "index.html")
 
 
+def accept_panel(request):
+    if not request.user.is_authenticated or not request.user.is_superuser:
+        return redirect('/')
+
+    return render(request, "accept_panel.html",
+    context={
+        'transactions': Transaction.objects.filter(accepted=False).order_by("-date"),
+        })
+
+def accept_transaction(request, transid):
+    if not request.user.is_authenticated or not request.user.is_superuser:
+        return redirect('/')
+
+    Transaction.objects.filter(id=transid).update(accepted=True)
+
+    return redirect('/accept_panel')
+
+
+
 def dashboard(request):
     if not request.user.is_authenticated:
         return redirect('/')
@@ -22,7 +41,7 @@ def dashboard(request):
         'transactions': Transaction.objects.filter(
             Q(from_account=request.user.account) 
                 | Q(to_account=request.user.account)
-            ).order_by("-date"),
+            ).filter(accepted=True).order_by("-date"),
         })
 
 def new_transaction(request):
@@ -44,13 +63,15 @@ def confirm_transaction(request):
     if request.method == 'POST':
         # perform transaction
         recipient = request.POST['recipient']
+        message = request.POST['message']
         amount = int(request.POST['amount'])
         to_user = User.objects.filter(username=recipient)[0]
 
         Transaction.objects.create(
             from_account=request.user.account,
             to_account=to_user.account,
-            amount=amount
+            amount=amount,
+            message=message
         )
     return redirect('dashboard')
 

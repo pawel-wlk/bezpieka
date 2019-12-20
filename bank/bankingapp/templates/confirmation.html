@@ -7,6 +7,7 @@
   {% csrf_token %}
   <input type="text" value="{{transaction.recipient}}" name="recipient" style="display:none">
   <input type="number" value="{{transaction.amount}}" name="amount" style="display:none">
+  <input type="text" value="{{transaction.message}}" name="message" style="display:none">
   <button type="submit" class="btn btn-primary">Send</button>
   <a class="btn btn-danger" href="/dashboard">Stop transaction</a>
 </form>

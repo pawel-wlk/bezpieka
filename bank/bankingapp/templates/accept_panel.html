@@ -7,28 +7,31 @@
   <a href="accounts/logout">Logout</a>
 </h5>
 <h6>Account status: {{request.user.account.balance}}</h6>
-<a href="/new_transaction" class="btn btn-primary">Make a new transaction</a>
 <h2>
-  Your transaction history
+  Transactions to accept
 </h2>
 <table class="table">
   <thead>
     <tr>
+      <th scope="col">id</th>
       <th scope="col">From</th>
       <th scope="col">To</th>
       <th scope="col">Date</th>
       <th scope="col">Amount</th>
       <th scope="col">Message</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
     {% for transaction in transactions %}
     <tr>
+      <td>{{ transaction.id }}</td>
       <td>{{ transaction.from_account.user.username }}</td>
       <td>{{ transaction.to_account.user.username }}</td>
       <td>{{ transaction.date }}</td>
       <td>{{ transaction.amount }}</td>
-      <td>{{ transaction.message }}</td>
+      <td>{{ transaction.message | safe }}</td>
+      <td><a href="/accept/{{transaction.id}}">Accept</a></td>
     </tr>
     {% endfor %}
   </tbody>

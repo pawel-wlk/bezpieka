@@ -14,6 +14,7 @@ class RegisterForm(UserCreationForm):
 
 class TransactionForm(forms.Form):
     recipient = forms.CharField(label='Recipient')
+    message = forms.CharField(label='Message')
     amount = forms.IntegerField(label='Amount', min_value=0)
 
 
